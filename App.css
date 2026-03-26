@@ -1,0 +1,103 @@
+/* استيراد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Cairo', sans-serif;
+  overflow-x: hidden;
+  background: 
+    linear-gradient(rgba(129, 78, 78, 0.7), rgba(140, 115, 115, 0.7)),
+    url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* تخصيص السكرول */
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #ea580c;
+  border-radius: 10px;
+}
+
+/* تأثيرات الدخول */
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* أزرار الألوان في لوحة الإدارة */
+.color-btn-selected {
+  border-color: #f97316; /* برتقالي */
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* مودال المنتج */
+.modal-bg {
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+}
+
+/* زر إضافة للسلة */
+.add-cart-btn {
+  background-color: #1e293b; /* slate-900 */
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: #f97316; /* orange-600 */
+}
+
+/* زر Navbar hover */
+.nav-btn:hover {
+  background-color: #f97316;
+  color: white;
+}
+
+/* تدرج overlay على الصور */
+.overlay-gradient {
+  background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);
+}
+
+/* أزرار المقاسات في المودال */
+.size-btn-selected {
+  background-color: #f97316; /* برتقالي */
+  color: white;
+  border-color: #f97316;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* نصوص وعناوين */
+.font-black {
+  font-weight: 900;
+}
+
+/* خلفية المودال للتفاصيل */
+.modal-content {
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* تأثير التكبير على الصور */
+.img-hover-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.7s;
+}
